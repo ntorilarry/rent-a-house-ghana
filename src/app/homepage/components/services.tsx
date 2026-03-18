@@ -50,7 +50,7 @@ export default function ServicesSection() {
             return (
               <div
                 key={index}
-                className="border-2 border-gray-200 rounded-xl p-6 hover:border-teal-300 hover:bg-teal-50 transition duration-300 group"
+                className="border border-gray-200 rounded-xl p-6 hover:border-teal-300 hover:bg-teal-50 transition duration-300 group"
               >
                 <div className="mb-6">
                   <Icon className="w-12 h-12 text-teal-900 group-hover:text-teal-500 transition" />

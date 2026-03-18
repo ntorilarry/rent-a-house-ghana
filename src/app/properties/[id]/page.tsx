@@ -377,7 +377,7 @@ export default function PropertyDetailsPage() {
                   ].map(({ icon: Icon, label, value }) => (
                     <div
                       key={label}
-                      className="bg-white rounded-xl p-5 border-2 hover:border-teal-100 transition-all duration-200"
+                      className="bg-white rounded-xl p-5 border border-gray-200 hover:border-teal-100 transition-all duration-200"
                     >
                       <Icon className="text-teal-600 w-5 h-5 mb-2" />
                       <p className="text-neutral-500 text-xs font-medium uppercase tracking-wider">
@@ -401,7 +401,7 @@ export default function PropertyDetailsPage() {
                 </section>
 
                 {/* Key Features */}
-                <section className="bg-white rounded-xl border-2 p-6 sm:p-8">
+                <section className="bg-white rounded-xl border border-gray-200 p-6 sm:p-8">
                   <h2 className="text-lg font-semibold text-neutral-900 mb-5">
                     Key features
                   </h2>
@@ -418,7 +418,7 @@ export default function PropertyDetailsPage() {
                 </section>
 
                 {/* Amenities */}
-                <section className="bg-white rounded-xl border-2 p-6 sm:p-8">
+                <section className="bg-white rounded-xl border border-gray-200 p-6 sm:p-8">
                   <h2 className="text-lg font-semibold text-neutral-900 mb-4">
                     Amenities
                   </h2>
@@ -439,7 +439,7 @@ export default function PropertyDetailsPage() {
               <div className="lg:col-span-1">
                 <div className="lg:sticky lg:top-24 space-y-6">
                   {/* Property Details card */}
-                  <div className="bg-white rounded-xl border border-neutral-100 shadow-sm p-6">
+                  <div className="bg-white rounded-xl border border-gray-200  p-6">
                     <h3 className="text-sm font-semibold text-neutral-900 uppercase tracking-wider mb-4">
                       Property details
                     </h3>
@@ -472,12 +472,12 @@ export default function PropertyDetailsPage() {
                   </div>
 
                   {/* Agent card */}
-                  <div className="bg-white rounded-xl border border-teal-100 shadow-sm p-6 ring-1 ring-teal-50/50">
+                  <div className="bg-white rounded-xl border border-teal-200 shadow-sm p-6 ring-1 ring-teal-50/50">
                     <h3 className="text-sm font-semibold text-neutral-900 uppercase tracking-wider mb-4">
                       Contact agent
                     </h3>
                     <div className="flex items-center gap-3 mb-5">
-                      <div className="relative h-12 w-12 rounded-full overflow-hidden bg-neutral-100 ring-2 ring-white shadow">
+                      <div className="relative h-12 w-12 rounded-full overflow-hidden bg-neutral-100 ring-2 ring-white ">
                         <Image
                           src={property.agent.image}
                           alt={property.agent.name}
