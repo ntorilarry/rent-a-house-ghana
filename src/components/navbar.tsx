@@ -17,7 +17,7 @@ const navigation = [
   { name: "Faqs", href: "/faqs" },
 ];
 
-const SCROLL_THRESHOLD = 300;
+const SCROLL_THRESHOLD = 100;
 
 const Navbar = () => {
   const pathname = usePathname();

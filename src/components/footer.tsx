@@ -61,7 +61,7 @@ const Footer = () => {
           </Link>
 
           {/* Navigation */}
-          <nav className="flex items-center gap-10 ">
+          <nav className="flex flex-wrap items-center gap-4 justify-center lg:gap-10 ">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -74,7 +74,7 @@ const Footer = () => {
           </nav>
 
           {/* Socials */}
-          <ul className="flex items-center gap-3">
+          <ul className="flex flex-wrap justify-center items-center gap-3">
             {socialLinks.map((social) => (
               <li key={social.name}>
                 <a

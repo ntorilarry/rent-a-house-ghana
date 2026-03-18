@@ -33,7 +33,7 @@ export default function PropertyCard({
   amenities,
 }: PropertyCardProps) {
   return (
-    <Link href={`/property/${id}`}>
+    <Link href={`/properties/${id}`}>
       <div className="group h-full border bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2">
         {/* Image Container */}
         <div className="relative h-48 w-full overflow-hidden bg-gray-200">
