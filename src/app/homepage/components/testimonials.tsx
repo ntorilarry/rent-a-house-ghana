@@ -71,9 +71,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <p className="text-base font-semibold text-gray-900">
             {testimonial.name}
           </p>
-          <p className="text-base text-gray-600">
-            {testimonial.company}
-          </p>
+          <p className="text-base text-gray-600">{testimonial.company}</p>
         </div>
       </div>
     </div>
@@ -82,13 +80,12 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
 
 const TestimonialsSection = () => {
   return (
-    <section className=" bg-white ">
+    <section className=" bg-white pb-20">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         {/* Header */}
         <div className=" mx-auto text-left">
-        
           <h2 className=" text-3xl font-semibold tracking-tight text-teal-800 sm:text-4xl lg:text-5xl ">
-         Client Testimonials
+            Client Testimonials
           </h2>
         </div>
 

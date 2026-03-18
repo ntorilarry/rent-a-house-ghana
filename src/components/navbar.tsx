@@ -12,9 +12,9 @@ import { usePathname } from "next/navigation";
 import { IoHome } from "react-icons/io5";
 
 const navigation = [
-  { name: "Pricing", href: "/pricing" },
   { name: "About Us", href: "/about-us" },
-  { name: "Contact Us", href: "/contact-us" },
+  { name: "Properties", href: "/properties" },
+  { name: "Faqs", href: "/faqs" },
 ];
 
 const SCROLL_THRESHOLD = 300;
@@ -27,8 +27,8 @@ const Navbar = () => {
 
   const isActive = (href: string) => {
     if (href === "#") return false;
-    if (href === "/home") {
-      return pathname === "/" || pathname === "/home";
+    if (href === "/homepage") {
+      return pathname === "/" || pathname === "/homepage";
     }
     return pathname === href;
   };
@@ -39,7 +39,10 @@ const Navbar = () => {
 
       setHasScrolled(currentScrollY > SCROLL_THRESHOLD);
 
-      if (currentScrollY <= SCROLL_THRESHOLD || currentScrollY < lastScrollY.current) {
+      if (
+        currentScrollY <= SCROLL_THRESHOLD ||
+        currentScrollY < lastScrollY.current
+      ) {
         setScrollingDown(false);
       } else if (
         currentScrollY > SCROLL_THRESHOLD &&
@@ -73,14 +76,14 @@ const Navbar = () => {
               <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-12">
                   {/* Logo */}
-                  <div className="flex items-center gap-2">
+                  <Link href="/" className="flex items-center gap-2">
                     <div className="w-7 h-7 bg-teal-900 rounded flex items-center justify-center">
                       <IoHome className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-xl font-bold text-teal-900">
-                      Nestora
+                      RentAHouse
                     </span>
-                  </div>
+                  </Link>
 
                   {/* Desktop Navigation */}
                   <div className="hidden lg:flex lg:items-center lg:space-x-2 lg:mx-auto">

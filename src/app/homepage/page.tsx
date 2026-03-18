@@ -5,7 +5,7 @@ import Hero from "./components/hero";
 import ServicesSection from "./components/services";
 import FeaturedProperties from "./components/featuredProperties";
 import TestimonialsSection from "./components/testimonials";
-
+import CTA from "./components/callToAction";
 
 const Homepage = () => {
   return (
@@ -14,8 +14,9 @@ const Homepage = () => {
         <div>
           <Hero />
           <ServicesSection />
-          <FeaturedProperties/>
+          <FeaturedProperties />
           <TestimonialsSection />
+          <CTA />
         </div>
       </MainLayout>
     </div>

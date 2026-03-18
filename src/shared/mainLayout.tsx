@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
@@ -7,7 +8,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Navbar />
       <div>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
