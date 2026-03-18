@@ -391,7 +391,7 @@ export default function PropertyDetailsPage() {
                 </div>
 
                 {/* About */}
-                <section className="bg-white rounded-xl border-2 p-6 sm:p-8">
+                <section className="bg-white rounded-xl border border-gray-200 p-6 sm:p-8">
                   <h2 className="text-lg font-semibold text-neutral-900 mb-4">
                     About this property
                   </h2>
