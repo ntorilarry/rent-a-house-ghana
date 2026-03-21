@@ -301,7 +301,7 @@ export default function PropertyDetailsPage() {
             Property not found
           </h1>
           <p className="text-neutral-600 mb-8">
-            The property you're looking for doesn't exist or has been removed.
+            The property you&apos;re looking for doesn&apos;t exist or has been removed.
           </p>
           <Link
             href="/"
