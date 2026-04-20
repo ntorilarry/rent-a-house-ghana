@@ -2,6 +2,9 @@
 
 A modern real estate website built with **Next.js App Router** + **Tailwind CSS**, with a homepage hero search bar, featured properties, and a modern property details page.
 
+## Demo Link
+https://rent-a-house-gh.netlify.app/
+
 ## Getting Started
 
 Install dependencies:
